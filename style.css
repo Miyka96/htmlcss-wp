@@ -34,6 +34,7 @@ header{
     height: 400px;
     margin-top: 20px;
     background-color: rgb(0, 130, 134);
+    position: relative;
 }
 .col1{
     height: calc(100% - 30px);
@@ -42,6 +43,7 @@ header{
     margin-bottom: 15px;
     background-color: rgb(152, 209, 211);
     float: left;
+    position: relative;
     
 }
 .col2{
@@ -122,4 +124,29 @@ a{
     font-weight: 200;
     margin-top: 2px;
     color: grey;
+}
+.col1{
+    background-image: url(img/img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    height: 40%;
+}
+.col2{
+    background-image: url(img/banner-2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    height: 40%;
+}
+.col3{
+    background-image:url(img/img-3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    height: 40%;
+}
+.col1>h2{
+    position: absolute;
+    top: 50%;
 }
