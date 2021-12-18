@@ -95,6 +95,7 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     width: 40%;
+    z-index: 2;
 }
 .section1_subtitle{
     position: absolute;
@@ -104,6 +105,7 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     width: 40%;
+    z-index: 2;
 }
 .row1>h1{
     font-family: 'Montserrat', sans-serif;
@@ -122,12 +124,14 @@ a{
     display: inline-block;
     height: 150px; 
     width: 100%;
+    border-radius: 20px;
 }
 .card>img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border: 20px;
 }
 .card_bottom_article{
     display: inline-block;
@@ -169,3 +173,23 @@ footer span{
 .card:hover .img2{
     display: block;
 }
+/* OVERLAY */
+.overlay::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: black;
+    border-radius: 20px;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.overlay:hover::after{
+    opacity: 0.2;
+}
+
+/* Non riesco ad applicare l'overlay sulle singole 
+immagini delle colonne, l'overlay si applica indistintamente 
+su tutta la row. Help!  */
