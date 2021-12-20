@@ -125,6 +125,7 @@ a{
     height: 150px; 
     width: 100%;
     border-radius: 20px;
+    position: relative;
 }
 .card>img{
     width: 100%;
@@ -189,7 +190,3 @@ footer span{
 .overlay:hover::after{
     opacity: 0.2;
 }
-
-/* Non riesco ad applicare l'overlay sulle singole 
-immagini delle colonne, l'overlay si applica indistintamente 
-su tutta la row. Help!  */
